@@ -74,22 +74,20 @@
 
         <div id="work-area">
           <h1 class="cal__title">Work Area</h1>
-          <ul class="calendar clearfix js-calendar">
-            <!-- TODO: this is marked as an empty day for purpose of illustration -->
-            <li class="cal__day day--empty" data-day="mon">
+          <ul class="calendar clearfix">
+            <li class="cal__day" data-day="mon">
               <div class="day__date"></div>
               <div class="day__people"></div>
             </li>
             <li class="cal__day" data-day="tue">
               <div class="day__date"></div>
               <div class="day__people">
-                <!-- TODO: this day is filled with one person for purpose of illustration -->
-                <div class="day__person">AB</div>
               </div>
             </li>
             <li class="cal__day" data-day="wed">
               <div class="day__date"></div>
-              <div class="day__people"></div>
+              <div class="day__people">
+              </div>
             </li>
             <li class="cal__day" data-day="thu">
               <div class="day__date"></div>
@@ -107,6 +105,8 @@
               <div class="day__date"></div>
               <div class="day__people"></div>
             </li>
+          </ul>
+          <ul class="calendar clearfix js-calendar">
           </ul>
 
           <div class="app__inputs">
@@ -205,7 +205,7 @@
             <div class="app__actions">
               <label>Year</label>
               <input class="app__input js-year" type="text" value="2014" />
-              <a class="app__button js-update">Update</a>
+              <a class="app__button js-update" onclick="updateCalendar();">Update</a>
             </div>
 
           </div>
